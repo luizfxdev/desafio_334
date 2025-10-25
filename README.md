@@ -147,7 +147,7 @@ cd desafio_334
 - Subtração do Eclipse: **2**
 - Multiplicação Estelar: **21**
 - Divisão Estelar: **2**
-- Número Mágico de Prata: **70**
+- Número Mágico de Prata: **10**
 
 ### Entrada: `12, 8`
 **Saída:**
