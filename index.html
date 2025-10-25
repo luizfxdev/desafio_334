@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Lunar de Sailor Moon 🌙</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Vídeo de fundo -->
+    <video id="background-video" autoplay loop muted playsinline>
+      <source src="assets/background.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Áudio tema -->
+    <audio id="theme-audio" loop>
+      <source src="assets/theme.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- Controles de Áudio -->
+    <div class="audio-controls">
+      <button id="play-audio" class="audio-btn" title="Tocar música">🎵</button>
+      <button id="pause-audio" class="audio-btn" title="Pausar música">⏸️</button>
+    </div>
+
+    <!-- Container Principal -->
+    <div class="container">
+      <div class="title">🌙 CALCULADORA LUNAR 🌙</div>
+
+      <!-- Entrada -->
+      <div class="input-section">
+        <label for="input-valores">Digite dois números (Ex: 7, 3):</label>
+        <input type="text" id="input-valores" placeholder="Ex: 7, 3" class="pixel-input" />
+      </div>
+
+      <!-- Botões -->
+      <div class="button-container">
+        <button id="btn-calcular" class="btn-calcular">CALCULAR</button>
+        <button id="btn-retornar" class="btn-retornar">RETORNAR</button>
+      </div>
+
+      <!-- Seção de Resultado -->
+      <div id="resultado-section" class="resultado-section hidden">
+        <h3 class="resultado-title">✨ RESULTADO MÁGICO ✨</h3>
+        <div id="resultado-conteudo" class="resultado-conteudo"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
